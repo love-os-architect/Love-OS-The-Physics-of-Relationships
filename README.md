@@ -138,7 +138,7 @@ Run the simulation to diagnose the sustainability of a relationship based on obs
 
 The following graph demonstrates the time-domain response of two distinct relationship strategies over the same period ($T=100$).
 
-![Simulation Result: Ego vs Soul Efficiency](./images/simulation_ego_vs_soul_efficiency.png)
+![generated_image2.png](./generated_image2.png)
 *(Fig 1. Left: High Voltage/High Resistance approach. Right: Constant Voltage/Low Resistance approach.)*
 
 ## 🔬 Scenario A: Ego Love (The "Burnout" Model)
