@@ -53,7 +53,31 @@ Where:
 ```bash
 git clone [https://github.com/your-username/relationship-physics-engine.git](https://github.com/your-username/relationship-physics-engine.git)
 cd relationship-physics-engine
+from relationship_physics import RelationshipPhysics, Entity
+
+# Define two entities (e.g., Candidate and Company)
+# vector: [Vision, WorkEthic, RiskTolerance]
+candidate = Entity(potential=0.9, vector=[0.9, 0.8, 0.2])
+company   = Entity(potential=1.0, vector=[0.9, 0.9, 0.8])
+
+# Calculate Force
+# r_score: Current distance/friction (0.001 = super close/trusting)
+# compatibility: Instinctive match (0.0-1.0)
+engine = RelationshipPhysics()
+result = engine.compute_force(
+    entity_a=candidate,
+    entity_b=company,
+    r_score=0.5, 
+    compatibility=0.8
+)
+
+print(f"Relationship Force: {result.force:.2f}")
+# > Relationship Force: 85.4 (High Attraction)
 ```
+License
+MIT License. Based on the Love-OS Philosophy: "Code is the poetry of physics."
+
+
 # Love-OS: The Physics of Human Connection
 **Codename: SHAMBHALA - Relationship Dynamics Module**
 
